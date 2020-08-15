@@ -83,13 +83,18 @@ input {
    background-color: transparent;
    width: 80%;
 }
+.section-container {
+   background: #E5E5E5; 
+   padding-top: 10rem;
+   padding-bottom: 5rem;
+}
+.div-container {
+   background: white;
+   box-shadow: 0px 8px 16px rgba(50, 50, 71, 0.08);
+   border-radius: 8px;
+}
 .user-container {
    border-bottom: 1px #66666681 solid;
-   padding: 1rem;
-   padding-left: 4rem;
-}
-.icon-container {
-   border-bottom: 1px #66666681 solid; 
    padding: 1rem;
    padding-left: 4rem;
 }
@@ -98,7 +103,7 @@ input {
    padding: 1rem;
    padding-left: 4rem;
 }
-.fa-envelope-o, .fa-lock {
+.fa-lock {
    font-size: 1.5rem; 
    color: #666666;
 }
@@ -109,22 +114,26 @@ input {
    outline: none;
    background-color: transparent;
 }
-.Get-Started {
+.Welcome-back {
    padding: 3.125rem 0;
+   margin-left: 12rem;
+
 }
-form, .Get-Started,.form-text {
+.forgot-password {
+   padding-left: 3.2rem;
+}
+.forgot-password:hover {
+   text-decoration: none;
+   color: #2D9CDB;
+}
+form {
  margin-left: 12rem;
 }
 .form-bottom-text {
-   padding-top: 2rem;
-}
-.form-text {
-   font-weight: 600;
-   padding: 2rem 12rem;
-   font-size: 24px;
+   padding-top: 1rem;
 }
 .form-signup {
-   margin-top: 2rem;
+   margin: 2rem 0 5rem 0;
    width: 75%;
    height: 60px;
    font-size: 24px;
@@ -145,100 +154,10 @@ form, .Get-Started,.form-text {
    -webkit-text-stroke-width: 1.5px;
    -webkit-text-stroke-color: #666666;
 }
-
-.checkbox {
-   width: 100%;
-   position: relative;
-   display: block;
-   margin-left: 10px;
-}
-
-.checkbox input[type="checkbox"] {
-   width: auto;
-   opacity: 0.00000001;
-   position: absolute;
-   left: 0;
-   margin-left: -20px;
-}
-.checkbox label {
-   position: relative;
-}
-.checkbox label:before {
-   content: '';
-   position: absolute;
-   left: 0;
-   top: 0;
-   margin: 4px;
-   width: 44px;
-   height: 41px;
-   transition: transform 0.28s ease;
-   border-radius: 3px;
-   border: 2px solid #666666;
-}
-.checkbox label:after {
-   content: '';
-   display: block;
-   width: 15px;
-   height: 9px;
-   border-bottom: 2px solid #666666;
-   border-left: 2px solid #666666;
-   -webkit-transform: rotate(-45deg) scale(0);
-   transform: rotate(-45deg) scale(0);
-   transition: transform ease 0.25s;
-   will-change: transform;
-   position: absolute;
-   top: 16px;
-   left: 18px;
-}
-.checkbox input[type="checkbox"]:checked ~ label::before {
-   color: #7bbe72;
-}
-
-.checkbox input[type="checkbox"]:checked ~ label::after {
-   -webkit-transform: rotate(-45deg) scale(1);
-   transform: rotate(-45deg) scale(1);
-}
-
-.checkbox label {
-   min-height: 34px;
-   display: block;
-   padding-left: 40px;
-   margin-bottom: 0;
-   font-weight: normal;
-   cursor: pointer;
-   vertical-align: sub;
-}
-.checkbox label span {
-   position: absolute;
-   top: 65%;
-   -webkit-transform: translateY(-50%);
-   transform: translateY(-50%);
-   padding-left: 30px;
-}
-.checkbox input[type="checkbox"]:focus + label::before {
-   outline: 0;
-}
 /* .fa-eye {
    padding-right: 2rem;
 } */
-input.Agree {
-   width: 40px;
-   height: 40px;
-}
-.agreement-paragraph {
-   position: absolute;
-   padding: 10px 40px;
-}
-.section-container {
-   background: #E5E5E5; 
-   padding-top: 9rem;
-   padding-bottom: 5rem;
-}
-.div-container {
-   background: white;
-   box-shadow: 0px 8px 16px rgba(50, 50, 71, 0.08);
-   border-radius: 8px;
-}
+
 .container i {
    margin-left: -30px;
    cursor: pointer;
@@ -315,7 +234,7 @@ footer li {
       padding: 0;
       padding-left: 55px;
    }
-   .icon-container, .user-container, .password-container {
+  .user-container, .password-container {
       padding-left: 0;
    }
    input {
@@ -327,9 +246,6 @@ footer li {
    }
    .form-signup {
       width: 100%;
-   }
-   .form-text {
-      padding: 2rem;
    }
    /* .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {

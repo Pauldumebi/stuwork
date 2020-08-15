@@ -83,6 +83,16 @@ input {
    background-color: transparent;
    width: 80%;
 }
+.section-container {
+   background: #E5E5E5; 
+   padding-top: 10rem;
+   padding-bottom: 5rem;
+}
+.div-container {
+   background: white;
+   box-shadow: 0px 8px 16px rgba(50, 50, 71, 0.08);
+   border-radius: 8px;
+}
 .user-container {
    border-bottom: 1px #66666681 solid;
    padding: 1rem;
@@ -111,8 +121,9 @@ input {
 }
 .Get-Started {
    padding: 3.125rem 0;
+   margin-left: 12rem;
 }
-form, .Get-Started,.form-text {
+form {
  margin-left: 12rem;
 }
 .form-bottom-text {
@@ -120,8 +131,9 @@ form, .Get-Started,.form-text {
 }
 .form-text {
    font-weight: 600;
-   padding: 2rem 12rem;
+   padding: 2rem 0 4rem 12rem;
    font-size: 24px;
+   margin-left: 12rem;
 }
 .form-signup {
    margin-top: 2rem;
@@ -228,16 +240,6 @@ input.Agree {
 .agreement-paragraph {
    position: absolute;
    padding: 10px 40px;
-}
-.section-container {
-   background: #E5E5E5; 
-   padding-top: 9rem;
-   padding-bottom: 5rem;
-}
-.div-container {
-   background: white;
-   box-shadow: 0px 8px 16px rgba(50, 50, 71, 0.08);
-   border-radius: 8px;
 }
 .container i {
    margin-left: -30px;
