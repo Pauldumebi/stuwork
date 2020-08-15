@@ -215,18 +215,18 @@ footer li {
    .Sign-up {
       margin-left: 15px
    }
+   .Sign-in {
+      width: 100%
+   }
    .form {
       display: ;
    }
-   form, .form-text, .Get-Started, .checkbox {
+   form, .form-text, .Welcome-back, .checkbox {
       padding: 0;
       margin-left: 0;
    }
-  .checkbox label {
-      margin: 2rem 0 ;
-   }
-   .checkbox label span {
-      font-size: 14px !important;
+   .forgot-password {
+      padding-left: 2rem;
    }
    .form {
       width: 100%;
@@ -245,7 +245,7 @@ footer li {
       width: unset;
       padding-left: 20px;
    }
-   .Get-Started {
+   .Welcome-back {
       padding: 3.125rem 0;
    }
    .form-signup {
