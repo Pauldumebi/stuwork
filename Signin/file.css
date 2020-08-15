@@ -186,6 +186,10 @@ footer img {
 footer a {
    color: white;
 }
+footer a:hover {
+   text-decoration: none;
+   color: #0084F4;
+}
 footer li {
    padding-bottom: 0.5rem;
 }
