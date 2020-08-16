@@ -148,7 +148,7 @@ form {
    width: 37.5rem;
 }
 .icon {
-   min-width: 50px;
+   min-width: 80px;
    text-align: center;
 }
 .form-icon {
@@ -230,9 +230,14 @@ form {
 .checkbox input[type="checkbox"]:focus + label::before {
    outline: 0;
 }
-/* .fa-eye {
-   padding-right: 2rem;
-} */
+.fa-exclamation-circle {
+   margin-left: -50px;
+   color: red;
+}
+
+.fa-eye:hover {
+   cursor: pointer;
+}
 input.Agree {
    width: 40px;
    height: 40px;
@@ -241,12 +246,17 @@ input.Agree {
    position: absolute;
    padding: 10px 40px;
 }
-.container i {
-   margin-left: -30px;
-   cursor: pointer;
+.form-control {
+   padding: 1rem 0rem 3rem 0 !important;
+}
+.form-control small {
+   position: absolute;
+   left: 30rem;
+   padding-top: 10px;
+   color: red;
 }
 .fa-social {
-   padding: 1.5rem;
+   padding: 0.5rem;
    color: transparent;
    -webkit-text-stroke-width: 0.5px;
    -webkit-text-stroke-color: white;
