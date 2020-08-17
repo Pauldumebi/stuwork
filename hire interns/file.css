@@ -4,6 +4,10 @@
    box-sizing: border-box;
    font-family: Gilroy;
    font-size: 18px;
+   overflow-x: hidden;
+}
+.body {
+   background-color: #f8f8f8;
 }
 header {
    background: white;
@@ -11,6 +15,7 @@ header {
    position: fixed;
    float: left;
    width: 100%;
+   z-index: 1;
 }
 .navbar-brand img, .header-logo img {
    width: 97px;
@@ -42,113 +47,106 @@ header {
 #navbarSupportedContent a:hover {
    border-color: #2D9CDB;
 }
-.input-container {
-   width: 100%;
-}
-input {
-   border-top-style: hidden;
-   border-right-style: hidden;
-   border-left-style: hidden;
-   border-bottom-style: groove;
-   background-color: transparent;
-   width: 80%;
-}
-.section-container {
-   background: #E5E5E5; 
-   padding-top: 10rem;
-   padding-bottom: 5rem;
-}
-.div-container {
-   background: white;
-   box-shadow: 0px 8px 16px rgba(50, 50, 71, 0.08);
-   border-radius: 8px;
-}
-.user-container {
-   border-bottom: 1px #66666681 solid;
-   padding: 1rem;
-   padding-left: 4rem;
-}
-.password-container {
-   border-bottom: 1px #66666681 solid; 
-   padding: 1rem;
-   padding-left: 4rem;
-}
-.fa-lock {
-   font-size: 1.5rem; 
-   color: #666666;
-}
-.form-control:focus, .no-outline:active {
-   background: transparent;
-}
-.no-outline:focus {
-   outline: none;
-   background-color: transparent;
-}
-.Welcome-back {
-   padding: 3.125rem 0;
-   margin-left: 12rem;
 
+.body-image img {
+   width: 1500px;
+   height: auto;
 }
-.forgot-password {
-   padding-left: 3.2rem;
-}
-.forgot-password:hover {
-   text-decoration: none;
-   color: #2D9CDB;
-}
-form {
- margin-left: 12rem;
-}
-.form-bottom-text {
-   padding-top: 1rem;
-}
-.form-signup {
-   margin: 2rem 0 5rem 0;
-   width: 75%;
-   height: 60px;
-   font-size: 24px;
-   border-radius: 8px;
-}
-.form {
-   border: 1px solid #666666;
-   border-radius: 8px;
-   width: 37.5rem;
-}
-.icon {
-   min-width: 80px;
-   text-align: center;
-}
-.form-icon {
-   font-size: 1.5rem;
-   color: transparent;
-   -webkit-text-stroke-width: 1.5px;
-   -webkit-text-stroke-color: #666666;
-}
-
-.exclamationMark {
-   visibility: hidden;
-   margin-left: -50px;
-   color: #e74c3c;
-}
-.form-control {
-   padding: 1rem 0rem 3rem 0 !important;
-}
-.form-control.error i.fa-exclamation-circle {
-   visibility: visible;
-}
-.form-control small {
-   visibility: hidden;
+.body-image-text {
    position: absolute;
-   left: 27.8rem;
-   padding-top: 0;
-   color: #e74c3c;
+   top: 9.125rem;
+   left: 10rem;
+   color: white;
 }
-.form-control.error small {
-   visibility: visible;
+h1 {
+   font-size: 64px !important;
 }
-#togglePassword {
-   cursor: pointer;
+#students {
+   font-size: 64px;
+   color: #ff647c;
+   background: white;
+   padding: 0 1rem;
+   border-radius: 8px;
 }
+.section-1 {
+   margin-top: 23rem;
+   background-color: #E4E4E4;
+   padding: 2%;
+}
+
+.com-logo img {
+   padding: 1%;
+}
+.finding-talent-hr {
+   width: 100px;
+   height: 5px;
+   margin-left: 45% ;
+   background: #ff647c;
+}
+.finding-young-talent {
+   margin: -110px 9% ;
+   position: absolute;
+   width: 1070px;
+   height: 439px;
+   background: white;
+   padding: 3rem 4.31rem;
+   box-shadow: 2px 8px 24px rgba(186, 213, 249, 0.16);
+   border-radius: 8px;
+}
+
+.buttons {
+   width: 200px;
+   height: 61px;
+   /* padding: 0.5rem 3rem !important; */
+}
+.why-choose-us-text {
+   background: white;
+   margin-top: 4rem;
+   
+}
+.why-choose-us {
+   margin-top: 4rem;
+}
+.why-choose-us img {
+   width: 598px;
+   height: 486px;
+}
+.why-choose-us-text p {
+   font-weight: bold;
+   font-size: 32px;
+   padding: 3.75rem 3.75rem 0 3.75rem;
+}
+
+.why-choose-us-text li {
+   padding: 0 0 0 3rem;
+}
+#list-bullet {
+   font-size: 50px;
+   width: ;
+   height: auto;
+}
+
+.free-job-img img {
+   width: 1500px;
+   height: auto;
+}
+.free-job-img-section {
+   margin-top: 4rem;
+}
+.cards-section {
+   margin: 25rem 0 4rem 0;
+} 
+.card-images img {
+   width: 224px;
+   height: 191px;
+}
+.card {
+   border-radius: 8px !important;
+}
+.acct-mgr {
+   padding: 0 0 1.6rem 0;
+}
+
 .fa-social {
    padding: 20px 1rem 0 0;
    color: transparent;

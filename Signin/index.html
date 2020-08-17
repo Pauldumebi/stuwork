@@ -11,7 +11,7 @@
 </head>
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg container navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg container navbar-light">
          <a class="navbar-brand" href="#"><img src="/images/LOGO.png" alt=""></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                <a class="nav-link navlink" href="#">Find Jobs</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link navlink" href="#">Hire Intern</a>
+               <a class="nav-link navlink" href="/hire interns/index.html">Hire Intern</a>
              </li>
              <li class="nav-item">
                <a class="nav-link navlink" href="#">AboutUs</a>
@@ -45,46 +45,30 @@
              </li>
             </ul>
          </div>
-       </nav>
-       
-      <!-- <div class="topnav" id="myTopnav">
-         <div class="container header-logo">
-            <a href="#"><img alt="" src="/images/LOGO.png"></a>
-            <div>
-               <a href="#home" class="active home" style="margin-left: 4rem;">Home</a>
-               <a href="#Home" class="">Home</a>
-               <a href="#FindJobs">Find Jobs</a>
-               <a href="#HireIntern">Hire Intern</a>
-               <a href="#AboutUs">AboutUs</a>
-               <a href="#ContactUs">ContactUs</a>
-               <a href="#FAQ" class="FAQ">FAQ</a>
-            </div>
-            <div>
-               <a class="nav-link Sign-up" href="#" style="margin-left: 5rem;">Sign Up</a>
-               <a class="nav-link btn-primary Sign-in" href="#">Sign In</a>
-               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-               <i class="fa fa-bars"></i>
-               </a>
-            </div>
-            
-         </div>
-      </div> -->
+      </nav>
    </header>
 
    <section class="section-container">
       <div class="container div-container">
          <h1 class="Welcome-back">Welcome Back</h1>
-         <form action="/action_page.php">
+         <form action="/action_page.php" id="form">
             <div class="form">
-               <div class="input-container user-container">
-                 <i class="fa fa-user icon form-icon"></i>
-                 <input class="input-field no-outline" type="text" placeholder="Email" name="Email">
+               <div class="form-control input-container icon-container">
+                 <i class="fa fa-envelope-o icon"></i>
+                 <input class="input-field no-outline" type="text" placeholder="Email" name="email" id="email">
+                 <i class="fa fa-exclamation-circle exclamationMark"></i>
+                 <p>
+                  <small class="emailError"></small>
+                  </p>
                </div>
-              
-               <div class="input-container password-container">
+               <div class="form-control input-container password-container">
                  <i class="fa fa-lock icon form-icon"></i>
                  <input class="input-field no-outline" type="password" placeholder="Password" name="password" id="password">
-                 <i class="fa fa-eye" id="togglePassword" style="float: right; padding-top: 10px;"></i>
+                 <i class="fa fa-exclamation-circle exclamationMark"></i>
+                 <i class="fa fa-eye" id="togglePassword"></i>
+                  <p>
+                  <small class="passwordError"></small>
+                  </p>
                </div>
             </div>
             <div class="form-bottom-text">

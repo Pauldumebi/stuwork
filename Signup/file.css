@@ -11,37 +11,7 @@ header {
    position: fixed;
    float: left;
    width: 100%;
-   z-index: 20;
 }
-/* .topnav {
-   overflow: hidden;
- }
- 
- .topnav a {
-   float: left;
-   display: block;
-   color: #666666;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
-   font-size: 17px;
-   border-bottom: 5px solid transparent;
-   padding: 1rem !important;
- }
- 
- .topnav a:hover {
-   text-decoration: none;
-   border-color: #2D9CDB;
- }
- 
- .topnav a.active {
-   border-color: #2D9CDB;
-   color: #2D9CDB;
- }
- 
- .topnav .icon {
-   display: none;
- } */
 .navbar-brand img, .header-logo img {
    width: 97px;
 }
@@ -142,6 +112,9 @@ form {
    font-size: 24px;
    border-radius: 8px;
 }
+.form-signup:focus {
+   border: none;
+}
 .form {
    border: 1px solid #666666;
    border-radius: 8px;
@@ -230,10 +203,6 @@ form {
 .checkbox input[type="checkbox"]:focus + label::before {
    outline: 0;
 }
-.fa-exclamation-circle {
-   margin-left: -50px;
-   color: red;
-}
 
 .fa-eye:hover {
    cursor: pointer;
@@ -242,21 +211,40 @@ input.Agree {
    width: 40px;
    height: 40px;
 }
+.checkboxError {
+   position: absolute;
+   left: 4rem;
+   padding-top: 0;
+   color: #e74c3c;
+   visibility: hidden;
+}
 .agreement-paragraph {
    position: absolute;
    padding: 10px 40px;
 }
+.exclamationMark {
+   visibility: hidden;
+   margin-left: -50px;
+   color: #e74c3c;
+}
 .form-control {
    padding: 1rem 0rem 3rem 0 !important;
 }
+.form-control.error i.fa-exclamation-circle {
+   visibility: visible;
+}
 .form-control small {
+   visibility: hidden;
    position: absolute;
-   left: 30rem;
-   padding-top: 10px;
-   color: red;
+   left: 23.5rem;
+   padding-top: 0;
+   color: #e74c3c;
+}
+.form-control.error small {
+   visibility: visible;
 }
 .fa-social {
-   padding: 0.5rem;
+   padding: 20px 1rem 0 0;
    color: transparent;
    -webkit-text-stroke-width: 0.5px;
    -webkit-text-stroke-color: white;
@@ -327,19 +315,14 @@ footer li {
    .form {
       width: 100%;
    }
-   .icon {
-      padding-left: 60px;
-   }
    .fa-envelope-o{
       padding: 0;
-      padding-left: 55px;
    }
    .icon-container, .user-container, .password-container {
       padding-left: 0;
    }
    input {
       width: unset;
-      padding-left: 20px;
    }
    .Get-Started {
       padding: 3.125rem 0;

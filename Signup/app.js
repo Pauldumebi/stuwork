@@ -1,11 +1,11 @@
-// function myFunction() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#password');
@@ -19,39 +19,75 @@ togglePassword.addEventListener('click', function (e) {
     this.classList.toggle('fa-eye-slash');
 });
 
-const form = document.getElementById('form')
-const userName = document.getElementById('username')
-const email = document.getElementById('email')
-const userPassword = document.getElementById('userPassword')
-const SignupButton = document.getElementById('SignupBtn')
+//get the values from the inputs
+const form = document.getElementById('form'),
+      userName = document.getElementById('username'),
+      email = document.getElementById('email'),
+      userPassword = document.getElementById('password'),
+      SignupButton = document.getElementById('SignupBtn'),
+      userNameError = document.querySelector('.usernameError'),
+      emailError = document.querySelector('.emailError'),
+      passwordError = document.querySelector('.passwordError');
+         const confirm = document.getElementById('checkbox');
+
+function setErrorFor(input, message, messageTag) {
+  debugger
+  if(input.value.trim() == '' || input.value.trim() == ' ') {
+    let formControl = input.parentElement; // .form-control
+    //add error message inside small
+    messageTag.innerHTML = message;
+
+    //add error class 
+    formControl.classList.add('error');
+    return true
+
+  }else {
+    let formControl = input.parentElement; // .form-control
+    //add error message inside small
+    messageTag.innerText = '';
+    return false
+
+    //add error class 
+    formControl.classList.remove('error');
+  }
+  }
+
 
 form.addEventListener('submit', function(e) {
-  event.preventDefault();
+  e.preventDefault();
+  const checkUserName = setErrorFor(userName, 'Username cannot be blank', userNameError),
+   checkEmail = setErrorFor(email, 'Email is required', emailError),
+   checkPassword = setErrorFor(userPassword, 'Password is required', passwordError);
+  
 
-  checkInputs();
+  if(!checkUserName && !checkEmail && !checkPassword){
+    console.log("success")
+  }
 });
 
-function checkInputs() {
-  //get the values from the inputs
-  const usernameValue = username.value.trim();
-  const emailValue = email.value.trim();
-  const passwordValue = password.value.trim();
 
-  
-  if (usernameValue === '') {
-      //show error
-      //add error class
-      setErrorFor(username, 'Username cannot be blank');
-  }
-}
 
-function setErrorFor(input, message) {
-  const formControl = input.parentElement; // .form-control
-  const small = formControl.querySelector('small');
+userName.addEventListener('input', function () {
+  setErrorFor(userName, 'Username cannot be blank', userNameError)
+})
 
-  //add error message inside small
-  small.innerText = message;
+email.addEventListener('input', function () {
+  setErrorFor(email, 'Email is required', emailError)
+})
+userPassword.addEventListener('input', function() {
+  setErrorFor(userPassword, 'Password is required', passwordError)
+})
 
-  //add error class 
-  formControl.className = 'form-control error';
-}
+// form.addEventListener('submit', function(e) {
+//    e.preventDefault();
+
+//    if(confirm.checked==false) {
+//         document.getElementbyId('checkboxError').style.display = block;
+//          return false;
+//         }
+//   //  if(document.getElementById('checkbox').checked == false) {
+//   //    alert('plz check the checkbox field')
+//   //  }
+// })
+
+        

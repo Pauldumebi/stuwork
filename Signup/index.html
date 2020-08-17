@@ -11,7 +11,7 @@
 </head>
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg container navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg container navbar-light">
          <a class="navbar-brand" href="#"><img src="/images/LOGO.png" alt=""></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                <a class="nav-link navlink" href="#">Find Jobs</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link navlink" href="#">Hire Intern</a>
+               <a class="nav-link navlink" href="/hire interns/index.html">Hire Intern</a>
              </li>
              <li class="nav-item">
                <a class="nav-link navlink" href="#">AboutUs</a>
@@ -79,27 +79,36 @@
                <div class="form-control input-container user-container">
                  <i class="fa fa-user icon form-icon"></i>
                  <input class="input-field no-outline" type="text" placeholder="Full Name" name="usrnm" id="username">
-                 <i class="fa fa-exclamation-circle"></i>
-                 <small>Error message</small>
+                 <i class="fa fa-exclamation-circle exclamationMark"></i>
+                 <p>
+                    <small class="usernameError"></small>
+                 </p>
                </div>
                <div class="form-control input-container icon-container">
                  <i class="fa fa-envelope-o icon"></i>
                  <input class="input-field no-outline" type="text" placeholder="Email" name="email" id="email">
-                 <small>Error message</small>
-                 <i class="fa fa-exclamation-circle"></i>
+                 <i class="fa fa-exclamation-circle exclamationMark"></i>
+                 <p>
+                  <small class="emailError"></small>
+                  </p>
                </div>
                <div class="form-control input-container password-container">
                  <i class="fa fa-lock icon form-icon"></i>
                  <input class="input-field no-outline" type="password" placeholder="Password" name="password" id="password">
-                 <i class="fa fa-exclamation-circle"></i>
+                 <i class="fa fa-exclamation-circle exclamationMark"></i>
                  <i class="fa fa-eye" id="togglePassword"></i>
-                 <small>Error message</small>
+                  <p>
+                  <small class="passwordError"></small>
+                  </p>
                </div>
             </div>
             <div class="form-bottom-text checkbox">
                <div class="checkbox">
                   <input type="checkbox" id="checkbox" name="" value="">
                   <label for="checkbox" class="agreement-paragraph"><span>I Agree to StuWork’s Terms and Conditions</span></label>
+                  <p>
+                     <small class="checkboxError"><i class="fa fa-exclamation-circle"></i>Please click the checkbox to agree to our Terms and Conditions</small>
+                  </p>
                </div>
                <button class="btn-primary form-signup" id="SignupBtn">Sign Up</button>
             </div>
