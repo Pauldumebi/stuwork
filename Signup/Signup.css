@@ -7,6 +7,7 @@
 }
 .input-container {
    width: 100%;
+   border-radius: 0 !important;
 }
 input {
    border-top-style: hidden;
@@ -27,26 +28,23 @@ input {
    border-radius: 8px;
 }
 .user-container {
-   border-bottom: 1px #66666681 solid;
    padding: 1rem;
    padding-left: 4rem;
+   border-top-left-radius: 8px !important;
+   border-top-right-radius: 8px !important;
 }
 .icon-container {
-   border-bottom: 1px #66666681 solid; 
    padding: 1rem;
    padding-left: 4rem;
 }
 .password-container {
-   border-bottom: 1px #66666681 solid; 
-   padding: 1rem;
-   padding-left: 4rem;
+   border-bottom-left-radius: 8px !important;
+   border-bottom-right-radius: 8px !important;
 }
+
 .fa-envelope-o, .fa-lock {
    font-size: 1.5rem; 
    color: #666666;
-}
-.form-control:focus, .no-outline:active {
-   background: transparent;
 }
 .no-outline:focus {
    outline: none;
@@ -79,8 +77,6 @@ form {
    border: none;
 }
 .form {
-   border: 1px solid #666666;
-   border-radius: 8px;
    width: 37.5rem;
 }
 .icon {
@@ -153,7 +149,7 @@ form {
    padding-left: 40px;
    margin-bottom: 0;
    font-weight: normal;
-   cursor: pointer;
+   /* cursor: pointer; */
    vertical-align: sub;
 }
 .checkbox label span {
@@ -190,6 +186,9 @@ input.Agree {
    margin-left: -50px;
    color: #e74c3c;
 }
+.form-control:focus, .no-outline:active {
+   background: transparent;
+}
 .form-control {
    padding: 1rem 0rem 3rem 0 !important;
 }
@@ -206,7 +205,19 @@ input.Agree {
 .form-control.error small {
    visibility: visible;
 }
- 
+.footer-form{
+   width: 13.7rem !important;
+   margin-left: unset !important;
+   border-radius: unset !important;
+}
+.footer-form input {
+   margin: 1rem 0 !important;
+   border: unset !important;
+}
+.footer-form-control {
+   padding: 0.375rem 0.75rem !important;
+   border-radius: unset !important;
+}
 @media screen and (max-width: 1024px) {
    
 }
@@ -239,6 +250,7 @@ input.Agree {
    .icon-container, .user-container, .password-container {
       padding-left: 0;
    }
+
    input {
       width: unset;
    }

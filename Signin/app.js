@@ -26,7 +26,6 @@ const form = document.getElementById('form'),
       SignupButton = document.getElementById('SignupBtn'),
       emailError = document.querySelector('.emailError'),
       passwordError = document.querySelector('.passwordError');
-         const confirm = document.getElementById('checkbox');
 
 function setErrorFor(input, message, messageTag) {
   if(input.value.trim() == '' || input.value.trim() == ' ') {
@@ -56,7 +55,7 @@ form.addEventListener('submit', function(e) {
    checkPassword = setErrorFor(userPassword, 'Password is required', passwordError);
   
 
-  if(!checkUserName && !checkEmail && !checkPassword){
+  if(!checkEmail && !checkPassword){
     console.log("success")
   }
 });
