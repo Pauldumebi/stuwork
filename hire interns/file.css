@@ -3,49 +3,12 @@
    border: 0;
    box-sizing: border-box;
    font-family: Gilroy;
-   font-size: 18px;
-   overflow-x: hidden;
+   list-style: none;
 }
 .body {
    background-color: #f8f8f8;
-}
-header {
-   background: white;
-   box-shadow: 0px 8px 16px rgba(50, 50, 71, 0.06);
-   position: fixed;
-   float: left;
-   width: 100%;
-   z-index: 1;
-}
-.navbar-brand img, .header-logo img {
-   width: 97px;
-}
-.navbar-brand {
-   padding-right: 5rem;
-}
-
-.FAQ {
-   padding-right: 4rem;
-}
-.Sign-in {
-   color: white !important;
-   width: 130px;
-   background: #0084F4;
-   border-radius: 5px;
-   text-align: center;
-}
-.Sign-in, .Sign-up {
-  margin-top: 0.5rem;
-}
-
-.navlink {
-   color: #666666;
-   border-bottom: 5px solid transparent;
-   padding: 1rem !important; 
-}
-
-#navbarSupportedContent a:hover {
-   border-color: #2D9CDB;
+   overflow-x: hidden;
+   font-size: 18px;
 }
 
 .body-image img {
@@ -97,6 +60,7 @@ h1 {
 .buttons {
    width: 200px;
    height: 61px;
+   font-size: 24px !important;
    /* padding: 0.5rem 3rem !important; */
 }
 .why-choose-us-text {
@@ -116,16 +80,17 @@ h1 {
    font-size: 32px;
    padding: 3.75rem 3.75rem 0 3.75rem;
 }
-
 .why-choose-us-text li {
-   padding: 0 0 0 3rem;
+   padding: 0 0 0 1.5rem;
+   line-height: 50px;
 }
-#list-bullet {
-   font-size: 50px;
-   width: ;
-   height: auto;
+#square {
+   width: 10px;
+   height: 10px;
+   background: #ff647c;
+   display: inline-block;
+   margin-right: 1rem;
 }
-
 .free-job-img img {
    width: 1500px;
    height: auto;
@@ -137,8 +102,8 @@ h1 {
    margin: 25rem 0 4rem 0;
 } 
 .card-images img {
-   width: 224px;
-   height: 191px;
+   width: 100%;
+   height: auto;
 }
 .card {
    border-radius: 8px !important;
@@ -146,43 +111,18 @@ h1 {
 .acct-mgr {
    padding: 0 0 1.6rem 0;
 }
-
-.fa-social {
-   padding: 20px 1rem 0 0;
-   color: transparent;
-   -webkit-text-stroke-width: 0.5px;
-   -webkit-text-stroke-color: white;
+.Need-help h3 {
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 39px;
 }
-.page-footer {
-   padding-top: 4.5rem;
+.Need-help p{
+   font-size: 21px;
+   padding: 2rem 0;
+   line-height: 28px;
 }
-footer {
-   background: #151522;
-   color: white;
-}
-footer img {
-   width: 175.43px;
-}
-.footer-text {
-   color: #666666;
-   padding-top: 25px;
-   line-height: 35px;
-}
-footer a {
-   color: white;
-}
-footer a:hover {
-   text-decoration: none;
-   color: #0084F4;
-}
-footer li {
-   padding-bottom: 0.5rem;
-}
-.Explore, .Services, .Follow, .Legal {
-   padding-top: 18px;
-} 
 @media screen and (max-width: 1024px) {
-   
+
 }
 @media screen and (max-width: 950px) {
 
@@ -191,44 +131,58 @@ footer li {
 
 }
 @media screen and (max-width: 480px) {
-
-   .Sign-up {
-      margin-left: 15px
-   }
-   .Sign-in {
-      width: 100%
-   }
-   .form {
-      display: ;
-   }
-   form, .form-text, .Welcome-back, .checkbox {
-      padding: 0;
-      margin-left: 0;
-   }
-   .forgot-password {
-      padding-left: 2rem;
-   }
-   .form {
+   .body-image {
       width: 100%;
+      height: auto;
    }
-   .icon {
-      padding-left: 60px;
+   .body-image-text h1 {
+      font-size:44px !important;
+      margin-left: -140px;
    }
-   .fa-envelope-o{
-      padding: 0;
-      padding-left: 55px;
+   #students {
+      font-size: 36px !important;
    }
-  .user-container, .password-container {
-      padding-left: 0;
+   .finding-young-talent {
+      width: 330px;
+      height: inherit;
+      font-size: 16px !important;
+      padding: 3rem 2rem;
+      margin: -110px 15px;
    }
-   input {
-      width: unset;
-      padding-left: 20px;
+   h2 {
+      font-size: 28px !important;
    }
-   .Welcome-back {
-      padding: 3.125rem 0;
+   .section-1 {
+      margin-top: 43rem;
    }
-   .form-signup {
+   .buttons {
+      width: 150px;
+      margin: 0.5rem 0 !important;
+   }
+   .why-choose-us img {
       width: 100%;
+      height: auto;
    }
+   .why-choose-us-text p {
+      font-size: 28px;
+      padding: 3.75rem 15px 0 15px;
+      text-align: center;
+   }
+   .why-choose-us-text li {
+      font-size: 16px;
+      line-height: 35px;
+      padding: 0 1.5rem 0 0;
+   }
+   .free-job-img img  {
+      /* width: 100%; */ 
+   }
+   .cards-section {
+      margin-top: 38rem;
+   }
+   .card-deck .card {
+      margin-bottom: 30px !important;
+  }
+  .buttons {
+     font-size: 18px !important;
+  }
 }

@@ -5,43 +5,6 @@
    font-family: Gilroy;
    font-size: 18px;
 }
-header {
-   background: white;
-   box-shadow: 0px 8px 16px rgba(50, 50, 71, 0.06);
-   position: fixed;
-   float: left;
-   width: 100%;
-}
-.navbar-brand img, .header-logo img {
-   width: 97px;
-}
-.navbar-brand {
-   padding-right: 5rem;
-}
-
-.FAQ {
-   padding-right: 4rem;
-}
-.Sign-in {
-   color: white !important;
-   width: 130px;
-   background: #0084F4;
-   border-radius: 5px;
-   text-align: center;
-}
-.Sign-in, .Sign-up {
-  margin-top: 0.5rem;
-}
-
-.navlink {
-   color: #666666;
-   border-bottom: 5px solid transparent;
-   padding: 1rem !important; 
-}
-
-#navbarSupportedContent a:hover {
-   border-color: #2D9CDB;
-}
 .input-container {
    width: 100%;
 }
@@ -149,40 +112,7 @@ form {
 #togglePassword {
    cursor: pointer;
 }
-.fa-social {
-   padding: 20px 1rem 0 0;
-   color: transparent;
-   -webkit-text-stroke-width: 0.5px;
-   -webkit-text-stroke-color: white;
-}
-.page-footer {
-   padding-top: 4.5rem;
-}
-footer {
-   background: #151522;
-   color: white;
-}
-footer img {
-   width: 175.43px;
-}
-.footer-text {
-   color: #666666;
-   padding-top: 25px;
-   line-height: 35px;
-}
-footer a {
-   color: white;
-}
-footer a:hover {
-   text-decoration: none;
-   color: #0084F4;
-}
-footer li {
-   padding-bottom: 0.5rem;
-}
-.Explore, .Services, .Follow, .Legal {
-   padding-top: 18px;
-} 
+ 
 @media screen and (max-width: 1024px) {
    
 }
@@ -193,13 +123,6 @@ footer li {
 
 }
 @media screen and (max-width: 480px) {
-
-   .Sign-up {
-      margin-left: 15px
-   }
-   .Sign-in {
-      width: 100%
-   }
    .form {
       display: ;
    }
