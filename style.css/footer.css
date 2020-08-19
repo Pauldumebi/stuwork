@@ -45,9 +45,23 @@ footer li {
    float: right;
 }
 @media screen and (max-width: 1024px) {
+   .fa-social {
+      padding: 20px 0.9rem 0 0;
+   }
 }
 @media screen and (max-width: 950px) {
-
+   h5 {
+      font-size: 1rem !important;
+   }
+   a, p {
+      font-size: 14px !important;
+   }
+   .fa-social {
+      padding: 25px 0.5rem 0 0;
+  }
+  .Legal p {
+     padding-top: 5px;
+  }
 }
 @media screen and (max-width: 650px) {
 

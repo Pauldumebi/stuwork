@@ -86,6 +86,18 @@ input {
    .image-wrapper figcaption {
       top: 13%;
    }
+   .first-section {
+      margin-top: 4rem;
+   }
+   .offices-text {
+      width: unset !important;
+   }
+   .fa-social {
+      padding: 20px 0.9rem 0 0 !important;
+   }
+   .Email {
+      margin: 52px 0 5rem 0;
+  }
 }
 @media screen and (max-width: 950px) {
    .first-section {

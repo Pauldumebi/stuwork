@@ -29,12 +29,12 @@ const form = document.getElementById('form'),
 
 function setErrorFor(input, message, messageTag) {
   if(input.value.trim() == '' || input.value.trim() == ' ') {
-    let formControl = input.parentElement; // .form-control
+    let formGroup = input.parentElement; // .form-control
     //add error message inside small
     messageTag.innerHTML = message;
 
     //add error class 
-    formControl.classList.add('error');
+    formGroup.classList.add('error');
     return true
 
   }else {

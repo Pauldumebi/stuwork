@@ -12,9 +12,9 @@
    font-size: 18px;
 }
 
-.body-image img {
-   width: 1500px;
-   height: auto;
+.body-image {
+   background: url(../images/Group\ 2.png) no-repeat center center/cover;
+   height: 400px;
 }
 .body-image-text {
    position: absolute;
@@ -24,6 +24,9 @@
 }
 h1 {
    font-size: 64px !important;
+}
+.section-text {
+   padding: 20px 60px;
 }
 #students {
    font-size: 64px;
@@ -50,8 +53,6 @@ h1 {
 .finding-young-talent {
    margin: -110px 9% ;
    position: absolute;
-   width: 1070px;
-   height: 439px;
    background: white;
    padding: 3rem 4.31rem;
    box-shadow: 2px 8px 24px rgba(186, 213, 249, 0.16);
@@ -92,9 +93,9 @@ h1 {
    display: inline-block;
    margin-right: 1rem;
 }
-.free-job-img img {
-   width: 1500px;
-   height: auto;
+.free-job-img {
+   background: url(../images/Mask\ Group.png) no-repeat center center/cover;
+   height: 400px;
 }
 .free-job-img-section {
    margin-top: 4rem;
@@ -133,31 +134,82 @@ input {
 }
 
 @media screen and (max-width: 1024px) {
-
+   .body-image-text, h1, #students {
+      top: 9.125rem;
+      left: 2rem;
+      font-size: 54px !important;
+   }
+   .container {
+      margin-left: 34px !important;
+  }
+   .section-1 {
+    margin-top: 23rem;
+   }
+   .why-choose-us-text p {
+      padding: 3.75rem 3.75rem 0 2rem;
+   }
+   .why-choose-us-text li {
+      padding: unset;
+}
 }
 @media screen and (max-width: 950px) {
-
+   h1, #students {
+      font-size: 48px !important;
+   }
+   .section-text, .cards-section p {
+      font-size: 16px !important;
+   }
+   .buttons {
+      font-size: 18px !important;
+      width: 150px;
+   }
+   h2 {
+      font-size: 1.5rem !important;
+   }
+   h3 {
+      font-size: 21px !important;
+   }
+   .finding-talent-hr {
+      width: 70px;   
+   }
+   .container {
+      margin-left: 25px !important;
+  }
+  .section-1 {
+   margin-top: 24rem;
+  }
+  .why-choose-us-text p {
+   font-size: 1.3rem !important;
+  }
+  .why-choose-us-text li {
+     line-height: 35px !important;
+     font-size: 16px !important;
+  }
+  .why-choose-us-text p {
+   padding: 2rem 2rem 0 2rem !important;
+  }
+  .Need-help p {
+   font-size: 21px;
+   padding: 1rem 0 !important;
 }
 @media screen and (max-width: 650px) {
 
 }
 @media screen and (max-width: 480px) {
-   .body-image {
+   /* .body-image {
       width: 100%;
       height: auto;
-   }
+   } */
    .body-image-text h1 {
       font-size:44px !important;
-      margin-left: -140px;
+      margin-left: -155px;
    }
    #students {
       font-size: 36px !important;
    }
    .finding-young-talent {
-      width: 330px;
-      height: inherit;
-      padding: 3rem 2rem;
-      margin: -110px 15px;
+
+
    }
    .finding-young-talent p {
       font-size: 16px !important;
@@ -166,7 +218,7 @@ input {
       font-size: 28px !important;
    }
    .section-1 {
-      margin-top: 43rem;
+      margin-top: 30rem;
    }
    .buttons {
       width: 150px;
@@ -186,8 +238,8 @@ input {
       line-height: 35px;
       padding: 0 1.5rem 0 1.5rem;
    }
-   .free-job-img img  {
-      /* width: 100%; */ 
+   .finding-talent-hr {
+      margin: 0 auto 2rem auto;
    }
    .cards-section {
       margin-top: 38rem;

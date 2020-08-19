@@ -31,7 +31,7 @@ const form = document.getElementById('form'),
          const confirm = document.getElementById('checkbox');
 
 function setErrorFor(input, message, messageTag) {
-  debugger
+  // debugger
   if(input.value.trim() == '' || input.value.trim() == ' ') {
     let formControl = input.parentElement; // .form-control
     //add error message inside small

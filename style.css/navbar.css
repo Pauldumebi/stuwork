@@ -46,6 +46,23 @@ header {
 #navbarSupportedContent a:hover {
    border-color: #2D9CDB;
 }
+@media screen and (max-width: 1024px) {
+   .FAQ {
+      padding-right: unset !important;
+   }
+   .navbar-brand {
+      padding-right: unset !important;
+   }
+   .navlink {
+      padding: 1rem 0.9rem !important;
+   }
+}
+@media screen and (max-width: 950px) {
+
+}
+@media screen and (max-width: 650px) {
+
+}
 
 @media screen and (max-width: 480px) {
 
